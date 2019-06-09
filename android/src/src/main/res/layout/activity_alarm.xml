@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alarm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user1.activitytest.AlarmActivity">
+
+    <TableLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:text="Tap ID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textTapId" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/spinnerTaps"
+                tools:scrollbarSize="10dp"
+                android:scrollbarSize="10dp" />
+        </TableRow>
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:text="Day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/spinnerDays"
+                tools:scrollbarSize="10dp"
+                android:scrollbarSize="10dp" />
+        </TableRow>
+        <TableRow
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+            <TextView
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etTime"
+                android:focusable="false"
+                android:onClick="onClick_TimeBox"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:text="Duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDuration" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etDuration" />
+
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>

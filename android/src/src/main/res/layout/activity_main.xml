@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user1.activitytest.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="IP Address"
+            android:ems="10"
+            android:id="@+id/etIpAddr"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgBtnConnect"
+            android:layout_weight="1"
+            android:textOff="Connect"
+            android:textOn="Disconnect" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+
+            android:textSize="24dp"
+            android:text="Controller time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cntrlTimeHeader"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:textAlignment="center"
+
+            android:textSize="12dp"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:id="@+id/etCntrlTime"
+            android:background="@drawable/back"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!--
+    <ToggleButton
+        android:layout_marginTop="150dp"
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tgBtnWaterToggle"
+        android:layout_gravity="center"
+        android:textOff="Water On"
+        android:textOn="Water Off" />
+    <Button
+
+        android:text="New Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnNewActivity"
+        android:onClick="OnClick_btnNewActivity"/>
+
+    <Button
+        android:text="View Timers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnViewTimers"
+        android:onClick="OnClick_btnViewTimers"/>
+
+    <Button
+    android:text="Send Timers"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:textSize="14dp"
+    android:layout_gravity="center"
+    android:id="@+id/btnSendTimers"
+    android:onClick="OnClick_btnSendTimers"/>
+    -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="260dp"
+        android:stretchColumns="*">
+        <TableRow>
+
+
+        </TableRow>
+
+        <TableRow>
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tgBtnWaterToggle"
+                android:layout_gravity="center"
+                android:textOff="Water On"
+                android:textOn="Water Off"
+                android:layout_weight="1"/>
+            <Button
+
+                android:text="New Timer"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:id="@+id/btnNewActivity"
+                android:layout_weight="1"
+                android:onClick="OnClick_btnNewActivity"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="View Timers"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:id="@+id/btnViewTimers"
+                android:layout_weight="1"
+                android:onClick="OnClick_btnViewTimers"/>
+            <Button
+                android:text="Send Timers"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:id="@+id/btnSendTimers"
+                android:layout_weight="1"
+                android:onClick="OnClick_btnSendTimers"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
